@@ -1,7 +1,7 @@
-name: "FCM_Project"
+name: FCM_Project
 output_dir: ../docs
 navbar:
-  title: "FCM_Project"
+  title: FCM_Project
   left:
   - text: Home
     href: index.html
@@ -9,9 +9,17 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  - text: FCMData_clustering
+    href: FCMData_clustering.html
+  right:
+  - icon: fab fa-github
+    text: Source code
+    href: https://github.com/JiangXinYu0313/FCM_Project
 output:
   workflowr::wflow_html:
+    self_contained: yes
     toc: yes
     toc_float: yes
-    theme: cosmo
+    theme: cerulean
     highlight: textmate
+    code_folding: hide
